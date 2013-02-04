@@ -62,8 +62,11 @@
 							<Grid Margin="0,0,0,5" Height="15.96" VerticalAlignment="Bottom" HorizontalAlignment="Center">
 								<ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" Margin="0" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
 							</Grid>
-							<Ellipse x:Name="ellipse" Fill="#00000000" HorizontalAlignment="Stretch" Margin="10,10,10,25" Stroke="Black" VerticalAlignment="Stretch" Width="Auto"/>
-						</Grid>
+							<Ellipse x:Name="ellipse" Fill="#00000000" HorizontalAlignment="Stretch" Margin="10,10,10,25" VerticalAlignment="Stretch" Width="Auto"/>
+                            <ContentPresenter
+                                Content="{StaticResource UserGroup}"
+                                Margin="10,10,10,25" />
+                        </Grid>
 						<ControlTemplate.Triggers>
 							<Trigger Property="IsDefaulted" Value="true"/>
 							<Trigger Property="IsMouseOver" Value="true"/>
