@@ -78,6 +78,10 @@
     <Compile Include="Views\UserGroupActivityView.xaml.cs">
       <DependentUpon>UserGroupActivityView.xaml</DependentUpon>
     </Compile>
+    <Page Include="Assets.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
