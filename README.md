@@ -13,8 +13,8 @@ XAML Composition Patterns
 User Controls are your first line of XAML composition. Use them to organize
 your code and avoid a big ball of mud.
 
-* Inherits the DataContext from the container.
-* Can specify DependencyProperties that the container can bind to.
+* Give each control internal whitespace.
+* Put a margin around the container to balance the internal and external whitespace.
 
 Example user control: Page layout.
 
@@ -25,9 +25,9 @@ a data template inline or as a static resource. Define as a user control for
 maximum maintainability.
 
 * Inherits DataContext from the container, usually an item in a list.
-* Can select based on the type of the DataContext.
+* Can change based on the type of the DataContext.
 
-Example data template: Track selection.
+Example data template: Activity feed.
 
 ## Control Templates
 

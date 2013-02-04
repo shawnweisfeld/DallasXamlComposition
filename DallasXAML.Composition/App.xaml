@@ -1,8 +1,11 @@
-﻿<Application x:Class="DallasXAML.Composition.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             StartupUri="MainWindow.xaml">
+﻿<Application
+    x:Class="DallasXAML.Composition.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:DallasXAML.Composition.ViewModels"
+    StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <vm:ViewModelLocator
+            x:Key="Locator" />
     </Application.Resources>
 </Application>
