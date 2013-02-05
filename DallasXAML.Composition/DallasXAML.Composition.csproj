@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\ImageButton.cs" />
     <Compile Include="ViewModels\ActivityViewModel.cs" />
     <Compile Include="ViewModels\UserGroupActivityViewModel.cs" />
     <Compile Include="ViewModels\RecruitingActivityViewModel.cs" />
