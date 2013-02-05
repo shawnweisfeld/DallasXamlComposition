@@ -36,15 +36,17 @@ it's appearance, use a Control Template.
 
 * Use Blend. Writing control templates by hand is very difficult.
 * The container can data bind to any of the default control properties.
-* Can add DependencyProperties of your own.
 
 Example control template: Circle button.
 
-## Content Presenters
+## Custom Controls
 
 Composition is more than building interfaces out of components. Sometimes
 you need to turn it inside-out. When the container needs to put something into
 a component, use a Content Presenter. You will often see a Content Presenter
-in a control template.
+in a control template, to bind the Content property. But if you need more
+properties, create your own custom control.
 
-* The container populates the content.
+* Inherit a standard control to get its behavior.
+* Add DependencyProperties of your own.
+* Use TemplateBinding in a ContentPresenter to place that content.

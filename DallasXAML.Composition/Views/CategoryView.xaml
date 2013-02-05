@@ -4,7 +4,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:c="clr-namespace:DallasXAML.Composition.Controls"
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="300">
@@ -83,7 +82,7 @@
                 Property="Template">
                 <Setter.Value>
                     <ControlTemplate
-                        TargetType="{x:Type c:ImageButton}">
+                        TargetType="{x:Type Button}">
                         <Grid
                             x:Name="border"
                             SnapsToDevicePixels="true">
@@ -146,7 +145,7 @@
                                 VerticalAlignment="Stretch"
                                 Width="Auto" />
                             <ContentPresenter
-                                Content="{TemplateBinding Image}"
+                                Content="{StaticResource UserGroup}"
                                 Margin="10,10,10,25" />
                         </Grid>
                         <ControlTemplate.Triggers>
@@ -186,16 +185,15 @@
                 Width="Auto" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <c:ImageButton
+        <Button
             Content="User Group"
             HorizontalAlignment="Left"
             Height="92"
             Margin="10"
             VerticalAlignment="Top"
             Width="78"
-            Style="{DynamicResource UserGroupButtonStyle}"
-            Image="{StaticResource UserGroup}"/>
-        <c:ImageButton
+            Style="{DynamicResource UserGroupButtonStyle}"/>
+        <Button
             Content="Recruiting"
             HorizontalAlignment="Left"
             Height="92"
@@ -203,8 +201,8 @@
             VerticalAlignment="Top"
             Width="78"
             Style="{DynamicResource UserGroupButtonStyle}"
-            Grid.Column="1"
-            Image="{StaticResource Recruiting}"/>
+            Grid.Column="1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="38.971" Margin="20.588,46.088,0,0" Grid.Row="1" VerticalAlignment="Top" Width="31.618"/>
 
     </Grid>
 </UserControl>
