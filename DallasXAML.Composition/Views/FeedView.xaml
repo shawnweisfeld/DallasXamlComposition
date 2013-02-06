@@ -18,8 +18,11 @@
             <v:UserGroupActivityView />
         </DataTemplate>
     </UserControl.Resources>
-    <Grid>
-        <ListBox ItemsSource="{Binding Activities}"  
-                 Margin="10" HorizontalContentAlignment="Stretch"/>
+    <Grid Margin="10,10,-10,10">
+        <ScrollViewer>        
+            <ItemsControl ItemsSource="{Binding Activities}"  
+                 HorizontalContentAlignment="Stretch"/>
+        </ScrollViewer>
+
     </Grid>
 </UserControl>
